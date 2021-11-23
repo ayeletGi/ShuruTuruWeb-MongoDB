@@ -1,0 +1,80 @@
+html {
+    height: 100%;
+}
+body{
+    text-align: center;
+    font-family: cursive;
+    background: rgb(108,196,241);
+    background: radial-gradient(circle, rgba(108,196,241,1) 0%, rgba(202,243,255,1) 100%); background-position: center;
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: gradient 1s ease infinite; 
+}
+.prompt{
+    color: #005f7a;
+    margin-bottom:2%;
+}
+#mainPrompt{
+    margin-top: 5%;
+}
+.button{
+    width: 20%;
+    margin: 30px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.addButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #005f7a;
+}
+.addButton:hover {
+    background-color: #005f7a;
+    color: white;
+}
+.addGButton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #005f7a;
+}
+.addGButton:hover {
+    background-color: #005f7a;
+    color: white;
+}
+footer{
+    margin: 20px;
+}
+#toursTable{
+    width:100%;
+}
+
+.tableBtn {
+    background-color: transparent;
+    border: none;
+    color: #005f7a;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.tableBtn:hover {
+    color:  #00151b;
+    font-weight: bold;
+}
+
+#toursTable.display tbody tr:nth-child(even):hover td{
+    background-color: white !important;
+}
+    
+#toursTable.display tbody tr:nth-child(odd):hover td {
+    background-color: white !important;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Shuru turu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src= "/scripts/addGuide.js"></script>
+        <link rel="stylesheet" href="/styles/form_style.css">
+    </head>
+
+    <body>
+        <h1 class = "prompt">
+            Add Guide details:
+        </h1>
+        <!-- OUR Guide -->
+        <form id="guide_form" name="guide_form" method="POST">
+            <!-- Guide Name-->
+            <div class="form-group">
+                <label for="guide_name">Guide's Name</label>
+                <input type="text" class="form-control" name="guide_name" id="guide_name" placeholder="Name"
+                    required>
+            </div>
+
+            <!--  Guide Email -->
+            <div class="form-group">
+                <label for="email">Guide's Email</label>
+                <input type="text" class="form-control" name="email" id ="email" placeholder="email@gmail.com"
+                 required>
+            </div>
+
+            <!-- Guide Phone -->
+            <div class="form-group">
+                <label for="phone">Guide's Phone</label>
+                <input type="number" class="form-control" name="phone" id="phone" placeholder="Phone Number"
+                    required>
+            </div>
+
+            <button type="submit" class="button btn btn-primary btn-lg btn-success">Submit</button>
+
+        </form>
+
+    </body>
+
+</html>

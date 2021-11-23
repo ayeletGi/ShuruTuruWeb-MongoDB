@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Shuru turu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src= "/scripts/editTour.js"></script>
+        <link rel="stylesheet" href="/styles/form_style.css">
+    </head>
+
+    <body>
+        <h1 class = "prompt">
+            Editing tour details:
+        </h1>
+        <h1 id = "tour_id" class = "prompt" ></h1>
+
+        <!-- OUR FORM -->
+        <form id="edit_form" name="edit_form" method="PUT">
+
+             <!-- Start Date-->
+            <div class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="Start date">
+            </div>
+
+             <!-- Duration-->
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="number" min ="0" class="form-control" name="duration" id="duration" placeholder="Duration">
+            </div>
+
+             <!-- Price-->
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" min ="0" class="form-control" name="price" id="price" placeholder="Price">
+            </div>
+
+
+            <button type="submit" class="button btn-success">Submit</button>
+
+        </form>
+
+    </body>
+
+</html>

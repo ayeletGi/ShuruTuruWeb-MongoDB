@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Shuru turu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src= "/scripts/addSite.js"></script>
+        <link rel="stylesheet" href="/styles/form_style.css">
+    </head>
+
+
+    <body>
+        <h1 class = "prompt">
+            Add Site details:
+        </h1>
+        <h1 id = "tour_name" class = "prompt" ></h1>
+
+        <!-- OUR FORM -->
+        <form id="site_form" name="site_form" method="PUT">
+
+            <!-- Name-->
+             <div class="form-group">
+                <label for="site_name">Site name</label>
+                <input type="text" class="form-control" name="site_name" id="site_name" placeholder="Name"
+                    required>
+            </div>
+
+             <!-- Country-->
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" name="country" id="country" placeholder="Country"
+                    required>
+            </div>
+
+        
+            <button type="submit" class="button btn-success">Submit </button>
+
+        </form>
+
+    </body>
+
+</html>

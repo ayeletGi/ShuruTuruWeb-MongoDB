@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Shuru turu</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src= "/scripts/addTour.js"></script>
+        <link rel="stylesheet" href="/styles/form_style.css">
+    </head>
+
+    <body>
+        <h1 class = "prompt">
+            Add tour details:
+        </h1>
+
+        <!-- OUR FORM -->
+        <form id="tour_form" name="tour_form" method="POST">
+
+             <!-- Tour Name -->
+             <div class="form-group">
+                <label for="tour_name">Tour Name</label>
+                <input type="text" class="form-control" name="tour_name" id="tour_name" placeholder="Tour name"
+                    required>
+            </div>
+
+             <!-- Start Date-->
+            <div class="form-group">
+                <label for="start_date">Start Date</label>
+                <input type="date" class="form-control" name="start_date" id="start_date" placeholder="Start date"
+                    required>
+            </div>
+
+             <!-- Duration-->
+            <div class="form-group">
+                <label for="duration">Duration</label>
+                <input type="number" min ="0" class="form-control" name="duration" id="duration" placeholder="Duration"
+                    required>
+            </div>
+
+             <!-- Price-->
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="number" min ="0" class="form-control" name="price" id="price" placeholder="Price"
+                    required>
+            </div>
+
+            <!-- Guide Name-->
+            <div class="form-group">
+                <label for="guide_name">Guide's Name</label>
+                <select id="guide_name" name="guide_name"  required>
+                
+                </select>
+            </div>
+
+            <button type="submit" class="button btn btn-primary btn-lg btn-success">Submit</button>
+
+        </form>
+
+    </body>
+
+</html>

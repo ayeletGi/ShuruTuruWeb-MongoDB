@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Shuru turu</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.23/datatables.min.css"/>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.23/datatables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap5.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/datetime/1.0.3/js/dataTables.dateTime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/styles/index_style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"/>
+        <script src="/scripts/table.js"></script>
+    </head>
+    <body>
+        <h1 id = "mainPrompt" class = "prompt">
+            Welcome to Shuru Turu Service!
+        </h1>
+        <h1 id = "tablePrompt" class = "prompt">
+            These are your available tours:
+        </h1>
+        <main>
+            <button class="button addButton">
+                Add new Tour
+            </button>
+            <button class="button addGButton">
+                Add new Guide
+            </button>
+            <table id = "toursTable" class = "display">
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>StartDate</th>
+                      <th>Duration</th>
+                      <th>Price</th>
+                      <th>See More</th>
+                      <th>Edit</th>
+                      <th>Delete</th>
+
+                  </tr>
+              </thead>
+              <tfoot>   
+                <tr>
+                    <th>ID</th>
+                    <th>StartDate</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                    <th>See More</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+
+                </tr>
+            </tfoot>
+            </table>
+            <button class="button addButton">
+              Add new Tour
+            </button>
+            <button class="button addGButton">
+                Add new Guide
+            </button>
+        </main>
+
+        <footer>
+            © Elchanan Hattin & Ayelet Gibli
+        </footer>
+
+    </body>
+</html>
